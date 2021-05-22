@@ -1,0 +1,12 @@
+{
+  "extends": "stylelint-config-sass-guidelines",
+  "rules": {
+    "string-quotes": "double",
+    "indentation": 4,
+    "color-hex-case": "upper",
+    "scss/at-import-no-partial-leading-underscore": null,
+    "scss/at-function-pattern": null,
+    "order/properties-alphabetical-order": null,
+    "function-url-quotes": null
+  }
+}
