@@ -1,0 +1,76 @@
+@import "../base/_typography";
+@import "../base/_colors";
+@import "../utils/functions";
+
+.input {
+    margin-bottom: 30px;
+    font-size: $small;
+    border: 1px solid $border-color;
+    border-radius: 10px;
+    padding-left: 5px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    align-self: normal;
+    outline: transparent;
+    box-shadow: none;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: 20px;
+    transition: box-shadow 0.1s ease-in-out;
+    position: relative;
+    z-index: 999;
+    flex: auto;
+
+    &:focus {
+        box-shadow: 0 4px 4px rgb(0, 0, 0, 25%);
+    }
+    
+    &__email {
+        background-image: url(getIconPath("mail"));
+    }
+    
+    &__login {
+        background-image: url(getIconPath("key"));
+    }
+    
+    &__password {
+        background-image: url(getIconPath("lock"));
+    }
+    
+    &__phone {
+        background-image: url(getIconPath("phone"));
+    }
+    
+    &__user {
+        background-image: url(getIconPath("user"));
+    }
+    
+    &__search {
+        background-image: url(getIconPath("search"));
+        flex-grow: 1;
+    }
+    
+    &__err-msg {
+        position: absolute;
+        top: -20px;
+        left: 8px;
+        font-size: 12px;
+        color: $err-msg;
+        transition: top 0.3s ease-in;
+    }
+    
+    &__err-msg--hidden {
+        top: 0;
+    }
+    
+    &--no-icon {
+        padding-left: 14px;
+    }
+    
+    &--with-icon {
+        padding-left: 58px;
+    }
+}
+
+
+

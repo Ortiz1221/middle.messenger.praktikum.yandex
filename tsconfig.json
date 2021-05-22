@@ -1,0 +1,17 @@
+{
+    "compilerOptions": {
+        "rootDir": "static",
+        "outDir": "dist",
+        "target": "es2019",
+        "declaration": false,
+        "module": "es6",
+        "removeComments": true,
+        "strictNullChecks": true,
+        "sourceMap": false,
+        "noImplicitAny": true
+    },
+    "include": [
+        "**/*"
+    ],
+    "exclude": ["./node_modules"]
+}

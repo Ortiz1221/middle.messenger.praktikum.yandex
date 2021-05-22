@@ -1,0 +1,3 @@
+@function getIconPath($name) {
+    @return "../static/assets/img/icons/#{$name}.svg";
+}

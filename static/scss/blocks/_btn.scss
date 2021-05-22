@@ -1,0 +1,42 @@
+@import "../base/_typography";
+@import "../base/_colors";
+
+.btn {
+    background: $btn-background;
+    border-radius: 20px;
+    color: $btn-text;
+    font-weight: $semi-bold;
+    font-size: $normal;
+    line-height: $larger-lh;
+    letter-spacing: $wider-ls;
+    padding: 7px 50px;
+    outline: transparent;
+    border: transparent;
+    margin-top: -15px;
+    cursor: pointer;
+    z-index: 1;
+
+    &:hover {
+        animation: jelly 0.5s;
+    }
+}
+
+@keyframes jelly {
+
+    0%,
+    100% {
+        transform: scale(1, 1);
+    }
+
+    25% {
+        transform: scale(0.9, 1.1);
+    }
+
+    50% {
+        transform: scale(1.1, 0.9);
+    }
+
+    75% {
+        transform: scale(0.95, 1.05);
+    }
+}
