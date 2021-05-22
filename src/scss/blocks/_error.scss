@@ -1,0 +1,57 @@
+@use "./_page";
+@use "./_btn";
+@import "../base/_typography";
+@import "../base/_colors";
+
+.error {
+    position: relative;
+    background: $background no-repeat left url("../assets/img/rect_bg.svg");
+    display: flex;
+    padding: 60px 75px;
+    overflow: hidden;
+
+    &__img {
+        max-width: 1120px;
+        position: absolute;
+        bottom: -50px;
+        right: -90px;
+    }
+    
+    &__link {
+        font-size: $normal;
+        font-weight: $semi-bold;
+        text-decoration: none;
+        color: $link;
+        transition: text-decoration 0.1s ease-in-out;
+        z-index: 999;
+        cursor: pointer;
+    }
+    
+    &__link:hover {
+        text-decoration: underline;
+    }
+    
+    &__main {
+        color: $primary;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        min-width: 540px;
+    }
+    
+    &__text {
+        font-size: $bigger;
+        line-height: $larger-lh;
+        margin: 0 0 50px;
+        letter-spacing: $wider-ls;
+        font-weight: $regular;
+    }
+    
+    &__title {
+        font-size: $giant;
+        line-height: $larger-lh;
+        font-weight: $bold;
+        margin: 0;
+        letter-spacing: $wider-ls;
+    }
+}

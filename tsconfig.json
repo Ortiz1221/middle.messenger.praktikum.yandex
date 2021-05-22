@@ -1,6 +1,6 @@
 {
     "compilerOptions": {
-        "rootDir": "static",
+        "rootDir": ".",
         "outDir": "dist",
         "target": "es2019",
         "declaration": false,
@@ -13,5 +13,5 @@
     "include": [
         "**/*"
     ],
-    "exclude": ["./node_modules"]
+    "exclude": ["./node_modules", "./src/test"]
 }
