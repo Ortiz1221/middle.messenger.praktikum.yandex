@@ -1,0 +1,109 @@
+@use "./_page";
+@use "./_input";
+@use "./_label";
+@use "./_btn";
+@import "../base/_colors";
+@import "../base/_typography";
+@import "../utils/_functions";
+
+.settings {
+    background: $background;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__edit-img-btn {
+        position: absolute;
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        background: url(getIconPath("camera")) $icon-bckg no-repeat center;
+        outline: transparent;
+        border: transparent;
+        bottom: 0;
+        left: 65px;
+        cursor: pointer;
+        box-shadow: none;
+        transition: background-color 0.1s ease-in-out;
+    }
+    
+    &__edit-img-btn:hover {
+        background-color: $highlight;
+    }
+    
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: $primary;
+        border: 1px solid $border-color;
+        box-shadow: 0 1px 2px rgba(93, 132, 230, 0.1);
+        border-radius: 10px;
+        padding: 40px 90px;
+        min-width: 695px;
+        box-sizing: border-box;
+    }
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    &__form-title {
+        font-size: $large;
+        line-height: $larger-lh;
+        letter-spacing: $wider-ls;
+        font-weight: $semi-bold;
+        margin: 0 0 50px;
+    }
+    
+    &__full-name-inputs {
+        align-self: stretch;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 5px;
+    }
+    
+    &__img {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        margin-right: 25px;
+    }
+    
+    &__info {
+        display: flex;
+        align-self: flex-start;
+        margin-bottom: 40px;
+        align-items: center;
+        position: relative;
+    }
+    
+    &__link {
+        font-size: $smaller;
+        color: $highlight;
+        font-weight: $semi-bold;
+        text-decoration: none;
+        margin: 20px 0 25px;
+        transition: text-decoration 0.1s ease-in-out;
+        cursor: pointer;
+    }
+    
+    &__link:hover {
+        text-decoration: underline;
+    }
+    
+    &__name {
+        margin: 0;
+        font-size: $smaller;
+    }
+    
+    &__nickname {
+        color: $contrast;
+        font-size: $big;
+        font-weight: $bold;
+        margin: 0;
+        margin-bottom: 10px;
+    }
+}
