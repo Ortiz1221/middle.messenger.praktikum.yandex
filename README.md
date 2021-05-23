@@ -43,3 +43,5 @@
 [Макет в Figma](https://www.figma.com/file/6wlz00g1Ol53iWiwg4WYDm/Messenger)
 
 За иллюстрации спасибо сайту [DrawKit](https://www.drawkit.io/)
+
+Ссылка на pull request: https://github.com/Ortiz1221/middle.messenger.praktikum.yandex/pull/1
