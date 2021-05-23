@@ -7,8 +7,7 @@
     "start": "node server.js",
     "dev": "webpack serve --mode=development",
     "build": "webpack --mode=production",
-    "lint": "eslint src",
-    "stylelint": "stylelint src/scss --fix",
+    "lint": "eslint src && stylelint src/scss --fix",
     "test": "env TS_NODE_PROJECT=\"tsconfig.testing.json\" mocha --require ts-node/register --require jsdom-global/register 'src/test/*.spec.ts'",
     "docker:build": "docker build -t messenger .",
     "docker:run": "docker run --init -p 3000:3000 messenger"
@@ -55,7 +54,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "npm run test && npm run lint && npm run stylelint"
+      "pre-commit": "npm run test && npm run lint"
     }
   }
 }

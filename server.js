@@ -1,14 +1,14 @@
 const express = require("express");
 const helmet = require("helmet");
 const app = express();
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 
 app.use(helmet.referrerPolicy({ policy: "same-origin"}));
 app.use(
     helmet.contentSecurityPolicy({
         directives: {
             defaultSrc: ["'self'", "'unsafe-eval'"],
-            connectSrc: ["'self'", "https://ya-praktikum.tech/api/v2/"],
+            connectSrc: ["'self'", "https://ya-praktikum.tech/api/v2/", "wss://ya-praktikum.tech/ws/chats/"],
             fontSrc: ["'self'"],
             imgSrc: ["'self'", "https://ya-praktikum.tech/api/v2/resources/"],
             manifestSrc: ["'self'"],
